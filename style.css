@@ -228,7 +228,7 @@ text-align: center;
    
     color: var(--main-color-pink);
  } 
- /* starting banner section  */
+ /* hero section */
  .col40{
     margin:80px 0; 
     max-width: 40%;  
@@ -328,7 +328,7 @@ text-align: center;
     top: 120px; 
     right: 10px;
 }
-/* second section  */ 
+/* customer experience   */ 
 .subheading{
 margin-top: 28px ;
 /* max-width: 622.42px; ; */
@@ -343,7 +343,7 @@ margin-top: 28px ;
     /* border: 3px solid black; */ 
     margin-top: 90px;
 }   
-/* creating expereince section card  */
+
 .content-card{
     padding: 24px;
     margin-right: 104px;
@@ -361,7 +361,7 @@ color: #999999;
     height: 37px; 
   
 } 
-/* third section */ 
+/* our service  */ 
 .card{
     max-width: 254px;
     flex: 0 0 254px; 
@@ -384,6 +384,9 @@ color: #999999;
 } 
 .card img{
     object-fit: contain;
+}
+.card:nth-child(4n){
+  margin-right: 0;
 }
 /* footer section */    
 
@@ -451,7 +454,7 @@ line-height: 1.2;
     max-width: 20%; 
     flex: 0 0 20%;
 }
-
+/* media query  */
 @media (max-width:576px){
   /* columns full width */
   .col40,
@@ -475,14 +478,24 @@ line-height: 1.2;
   }
 
   .navlinks{
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
   }
-
-  .navlinks li a{
-    padding: 10px 0;
+  .logo{
+    max-width: 120px;
   }
-
+  .navlinks li a{
+    padding: 10px 0; 
+    font-size: 6px;
+  }
+.cmn-btn{
+        padding: 12px 16px;   /* smaller but still clickable */
+    font-size: 14px;      /* better fit */
+} 
+.cmn-btn1{
+     padding: 12px 18px;  /* reduce horizontal space */
+    font-size: 14px;
+}
   /* banner */
   .col40{
     margin: 40px 0;
@@ -511,8 +524,8 @@ line-height: 1.2;
 
   /* service cards */
   .card{
-    max-width: 100%;
-    flex: 0 0 100%;
+    max-width: 48%;
+    flex: 0 0 48%;
     margin: 20px 0;
   }
 
