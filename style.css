@@ -575,7 +575,7 @@ line-height: 1.2;
   .col25{
  max-width: 48%;
     flex: 0 0 48%;
-     margin: 20px 2px;
+     margin: 20px 0;
   }
 
   .content-card{
@@ -600,6 +600,10 @@ line-height: 1.2;
 
 
 }
+
+
+
+
 
 
 
