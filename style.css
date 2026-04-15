@@ -450,10 +450,7 @@ line-height: 1.2;
 .footer-text:hover{
     color: var(--main-color-pink);
 }
-.col20{
-    max-width: 20%; 
-    flex: 0 0 20%;
-}
+
 /* media query  */
 @media (max-width:576px){
   /* columns full width */
