@@ -575,7 +575,9 @@ line-height: 1.2;
 
   /* customer cards */
   .col25{
-    margin-top: 40px;
+ max-width: 48%;
+    flex: 0 0 48%;
+     margin: 20px 2px;
   }
 
   .content-card{
@@ -587,7 +589,7 @@ line-height: 1.2;
   .card{
     max-width: 48%;
     flex: 0 0 48%;
-    margin: 20px 0;
+    margin: 20px 2px;
   }
 
   /* footer */
@@ -600,3 +602,7 @@ line-height: 1.2;
 
 
 }
+
+
+
+
