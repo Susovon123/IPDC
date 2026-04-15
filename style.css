@@ -145,36 +145,36 @@ font-size: 22px;
     text-transform: capitalize;
 }
 
-.gap{
+.cmn-gap{
     margin-top: 40px;
 }   
 
-.gap1{
+.cmn-gap1{
     padding-top: 100px ;
 
 }  
 .center{
 text-align: center;
 }
-.gap2{
+.cmn-gap2{
       margin-right: 31px;
 } 
-.gap3{
+.cmn-gap3{
     margin-top: 10px; 
 } 
-.gap4{
+.cmn-gap4{
     margin-top: 37px;
 } 
-.gap5{
+.cmn-gap5{
     margin-top: 18px;
 } 
-.gap6{
+.cmn-gap6{
     margin: 8px 0;
 } 
-.gap7{
+.cmn-gap7{
     margin: 107px 0;
 }
-.gap8{
+.cmn-gap8{
     margin: 20px 0;
 } 
 
@@ -370,6 +370,7 @@ color: #999999;
     /* border: 4px solid black;   */
     margin-right: 116px; 
     margin: 0 auto;
+    
 
 
 
@@ -385,9 +386,9 @@ color: #999999;
 .card img{
     object-fit: contain;
 }
-.card:nth-child(4n){
+/* .card:nth-child(4n){
   margin-right: 0;
-}
+} */
 /* footer section */    
 
 .col18 {
@@ -451,7 +452,70 @@ line-height: 1.2;
     color: var(--main-color-pink);
 }
 
-/* media query  */
+/* media query  */ 
+@media (max-width:1200px){
+
+  .container{
+    max-width: 100%;
+  }
+
+  .navlinks li a{
+    padding: 0 20px;
+  }
+
+  /* reduce big margins */
+ 
+.col18,
+  .col13{
+    margin-right: 60px;  /* reduce from 136px */
+  }
+
+
+} 
+@media (max-width:992px){
+
+  /* banner stack */
+  .col40{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .col60{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* customer section */
+  .col25{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+/* service section */
+/* .card{
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin: 30px 0;
+  } */
+
+  /* fix big spacing */
+  .content-card{
+    margin-right: 20px;
+  }
+
+  /* service cards */
+  .card{
+    margin: 20px auto;
+  }
+
+  /* footer spacing fix */
+  .col18,
+  .col13{
+    margin-right: 30px;
+  }
+
+
+} 
 @media (max-width:576px){
   /* columns full width */
   .col40,
@@ -475,7 +539,7 @@ line-height: 1.2;
   }
 
   .navlinks{
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: flex-start;
   }
   .logo{
@@ -483,7 +547,7 @@ line-height: 1.2;
   }
   .navlinks li a{
     padding: 10px 0; 
-    font-size: 6px;
+    
   }
 .cmn-btn{
         padding: 12px 16px;   /* smaller but still clickable */
@@ -534,60 +598,5 @@ line-height: 1.2;
   }
 
 
-
-}
-
-@media (max-width:992px){
-
-  /* banner stack */
-  .col40{
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .col60{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  /* customer section */
-  .col25{
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  /* fix big spacing */
-  .content-card{
-    margin-right: 20px;
-  }
-
-  /* service cards */
-  .card{
-    margin: 20px auto;
-  }
-
-  /* footer spacing fix */
-  .col18,
-  .col13{
-    margin-right: 40px;
-  }
-
-}
-@media (max-width:1200px){
-
-  .container{
-    max-width: 100%;
-  }
-
-  .navlinks li a{
-    padding: 0 20px;
-  }
-
-  /* reduce big margins */
-  .col18,
-  .col13{
-    margin-right: 60px;
-  }
 
 }
