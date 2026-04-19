@@ -471,9 +471,6 @@ line-height: 1.2;
 /* media query  */ 
 @media (max-width:1200px){
 
-  .container{
-    max-width: 100%;
-  }
 
   .navlinks li a{
     padding: 0 20px;
@@ -534,17 +531,13 @@ line-height: 1.2;
     max-width: 50%;
     margin-bottom: 15px;
   }
- .container{
-  max-width: 100%;
- }
+
 
 
 } 
 
 @media (max-width:576px){
- .container{
-  max-width: 100%;
- }
+ 
   /* columns full width */
   .col40,
   .col60,
@@ -619,11 +612,9 @@ line-height: 1.2;
 
   /* footer */ 
   .col20{
-    max-width: 100%; 
+  
+    max-width:100%; 
     flex: 0 0 100%;
   }
 
 }
-
-
-
