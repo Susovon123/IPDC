@@ -612,7 +612,7 @@ line-height: 1.2;
 
   /* footer */ 
   .col20{
-  
+  margin-left:6px;
     max-width:100%; 
     flex: 0 0 100%;
   }
