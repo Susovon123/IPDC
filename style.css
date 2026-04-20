@@ -38,7 +38,9 @@ img{
 ul,li{
     list-style: none;
 }  
-
+html{
+  scroll-behavior: smooth;
+}
 body{
     /* color:var(--main-color-grey1); */
     font-size: 14px; 
